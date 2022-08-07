@@ -1,0 +1,201 @@
+html{
+    min-block-size: 100%;
+}
+body{
+    margin: 0;
+    block-size: 100%;
+    font-family: system-ui, sans-serif;
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 94px;
+    box-sizing: border-box;
+    background-color: #333;
+    border: 5px solid #000;
+}
+.header-txt{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 180px;
+    height: 36px;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+}
+.header-txt{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 180px;
+    height: 36px;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+}
+.header-links{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 180px;
+    height: 36px;
+}
+.header-link-1,
+.header-link-2,
+.header-link-3{
+    position: relative;
+    top: 0px;
+    float: left;
+    width: 60px;
+    height: 36px;
+    padding-top: 10px;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+.main{
+    position: relative;
+    display: grid;
+    width: calc(100% - 20px);
+    margin: 10px;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+.main-left{
+    position: relative;
+    height: auto;
+}
+.main-right-txt{
+    position: relative;
+    margin: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+.main-right{
+    position: relative;
+    height: auto;
+    background: #333;
+    border: 5px solid #000;
+}
+.main-left-txt{
+    position: relative;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.ml-txt-1, .ml-txt-2{
+    position: relative;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.ml-cards{
+    position: relative;
+    margin-top: 20px;
+    width: auto;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.ml-card{
+    position: relative;
+    border: 5px solid #000;
+    box-sizing: border-box;
+}
+.ml-card-header{
+    position: relative;
+    width: auto;
+    padding: 10px;
+    height: 50px;
+    margin: 0px;
+    top: 0px;
+    box-sizing: border-box;
+    background: #333;
+}
+.ml-card-header-txt{
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+.ml-card-txt{
+    position: relative;
+    margin: 20px 10px;
+    font-size: 14px;
+    line-height: 24px;
+}
+@media screen and (min-width: 1912px) {
+    .ml-cards {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 2544px) {
+    .ml-cards {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 3176px) {
+    .ml-cards {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 1296px) {
+    .ml-cards{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
+@media screen and (max-width: 1280px) {
+    .main{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .ml-cards{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 640px) {
+    .ml-cards{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .header{
+        height: 217px;
+    }
+    .header-txt{
+        position: relative;
+        margin-bottom: 24px;
+    }
+    .header-links{
+        position: relative;
+        width: 100%;
+        right: 0px;
+    }
+    .header-link-1{
+        width: 100%;
+        height: 41px;
+        border-top: 1px solid #999;
+    }
+    .header-link-2{
+        width: 100%;
+        height: 41px;
+        border-top: 1px solid #999;
+    }
+    .header-link-3{
+        width: 100%;
+        height: 41px;
+        border-top: 1px solid #999;
+    }
+}
